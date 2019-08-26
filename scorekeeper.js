@@ -14,7 +14,8 @@ p1Button.addEventListener("click", function(){
     {
         p1Score++;
         if(p1Score === winningScore)
-        {
+        {   
+            d1.classList.add("winner");
             gameover = true;
         }
         d1.textContent = p1Score;
@@ -27,6 +28,7 @@ p2Button.addEventListener("click", function(){
         p2Score++;
         if(p2Score ===winningScore)
         {
+            d2.classList.add("winner");
             gameover = true;
         }
         d2.textContent = p2Score;
@@ -38,5 +40,7 @@ resetButton.addEventListener("click", function(){
     p1Score = 0;
     p2Score = 0;
     d1.textContent = p1Score;
+    d1.classList.remove("winner");
     d2.textContent = p2Score;
+    d2.classList.remove("winner");
 });
