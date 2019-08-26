@@ -38,8 +38,8 @@ p2Button.addEventListener("click", function(){
 });
 maxScope.addEventListener("change", function()
 {
-    scoreId.textContent = Number(maxScope.value);
-    winningScore = Number(maxScope.value);
+    scoreId.textContent = Number(this.value);
+    winningScore = Number(this.value);
     reset();
 });
 
