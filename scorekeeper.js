@@ -5,6 +5,7 @@ var rButton     =  document.querySelector("#reset");
 var d1          =  document.querySelector("#p1Display");
 var d2          =  document.querySelector("#p2Display");
 var maxScope    =  document.querySelector("#maxScope");
+var scoreId     =  document.querySelector("#scoreId");
 var p1Score = 0;
 var p2Score = 0;
 var gameover = false;
@@ -37,7 +38,15 @@ p2Button.addEventListener("click", function(){
 });
 maxScope.addEventListener("change", function()
 {
-    
+    scoreId.textContent = Number(maxScope.value);
+    winningScore = Number(maxScope.value);
+    gameover = false;
+    p1Score = 0;
+    p2Score = 0;
+    d1.textContent = p1Score;
+    d1.classList.remove("winner");
+    d2.textContent = p2Score;
+    d2.classList.remove("winner");
 });
 
 
