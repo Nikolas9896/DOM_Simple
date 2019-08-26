@@ -4,6 +4,7 @@ var resetButton =  document.querySelector("#reset");
 var rButton     =  document.querySelector("#reset");
 var d1          =  document.querySelector("#p1Display");
 var d2          =  document.querySelector("#p2Display");
+var maxScope    =  document.querySelector("#maxScope");
 var p1Score = 0;
 var p2Score = 0;
 var gameover = false;
@@ -34,6 +35,11 @@ p2Button.addEventListener("click", function(){
         d2.textContent = p2Score;
     }
 });
+maxScope.addEventListener("change", function()
+{
+    
+});
+
 
 resetButton.addEventListener("click", function(){
     gameover = false;
