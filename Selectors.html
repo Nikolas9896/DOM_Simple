@@ -6,7 +6,7 @@
 	<title>Selectors</title>
 </head>
 <body>
-	<h1>I am an h1!</h1>
+	<h1>Selectors</h1>
 	<p id="first" class="special">Hello</p>
 	<p class="special">Hello</p>
 	<p>Hi Again</p>
@@ -14,7 +14,24 @@
 <hr>
 <p><strong>TASK:</strong> Select first paragraph with 4 different ways</p>
 <hr>
+<h2>Solution</h2>
+<ol>
 
+
+document.querySelectorAll("p")[0]
+<p id=​"first" class=​"special">​Hello​</p>​
+	<li>document.getElementById("first");</li>
+		<p id=​"first" class=​"special">​Hello​</p>​
+	<li>document.getElementsByClassName("special")[0];</li>
+		<p id=​"first" class=​"special">​Hello​</p>​
+	<li>document.getElementsByTagName("p")[0];</li>
+	<p id=​"first" class=​"special">​Hello​</p>​
+	<li>document.querySelector("p");</li>
+	<p id=​"first" class=​"special">​Hello​</p>​
+	<li>document.querySelectorAll("p")[0]​</li>
+	<p id=​"first" class=​"special">​Hello​</p>
+</ol>
+<hr>
 
 </body>
 </html>
