@@ -40,17 +40,15 @@ maxScope.addEventListener("change", function()
 {
     scoreId.textContent = Number(maxScope.value);
     winningScore = Number(maxScope.value);
-    gameover = false;
-    p1Score = 0;
-    p2Score = 0;
-    d1.textContent = p1Score;
-    d1.classList.remove("winner");
-    d2.textContent = p2Score;
-    d2.classList.remove("winner");
+    reset();
 });
 
 
 resetButton.addEventListener("click", function(){
+    reset();
+});
+
+function reset(){
     gameover = false;
     p1Score = 0;
     p2Score = 0;
@@ -58,4 +56,4 @@ resetButton.addEventListener("click", function(){
     d1.classList.remove("winner");
     d2.textContent = p2Score;
     d2.classList.remove("winner");
-});
+}
