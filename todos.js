@@ -1,9 +1,10 @@
-var list = document.querySelectorAll("li");
+var lis = document.querySelectorAll("li");
 
-firstLI.addEventListener("mouseover", function(){
+for(var i = 0; i < lis.length; i++){
+lis[i].addEventListener("mouseover", function(){
     this.style.color = "green";
 });
-
-firstLI.addEventListener("mouseout", function(){
+lis[i].addEventListener("mouseout", function(){
     this.style.color = "black";
 });
+}
